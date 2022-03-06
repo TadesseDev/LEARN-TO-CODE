@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap");
+
+:root {
+  --main: #272a31;
+  --primary: #ee513b;
+  --blur: #d3d3d3;
+  --blurWhite: #f0f0f0;
+  --blurDark: #919191;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--main);
+  background-color: #f1f1f1;
+}
+main {
+  background-image: url("../Images/pictures/mobile-bg.svg");
+  background-size: 100%;
+}
+header {
+  margin: 7%;
+}
+#drop-menu {
+  width: 10%;
+  max-width: 40px;
+}
+
+header nav {
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: var(--main);
+  display: none;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0px;
+}
+section {
+  margin: 7%;
+}
+header nav ul li {
+  margin: 20px 10px;
+}
+
+header nav ul li:hover {
+  border-bottom: 3px var(--primary) solid;
+  padding-bottom: 10px;
+}
+header nav ul a {
+  text-decoration: none;
+  color: var(--blur);
+  font-size: 1.6rem;
+}
+header #logo {
+  display: none;
+}
+
+header nav #close-menu {
+  margin: 10px;
+}
+
+header nav #close-menu img {
+  display: block;
+  width: 20%;
+  min-width: 20px;
+  max-width: 100px;
+  margin-left: 100%;
+  transform: translate(-100%, 0);
+}
+
+/* general selectors*/
+.title-2 {
+  margin-bottom: 5px;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+.title-1 {
+  margin: 0;
+}
+/* end on general styles*/
+/* Home */
+
+#home {
+  margin-top: 10%;
+}
+#home .card {
+  margin: 15px -5%;
+  padding: 12px 10px;
+  background-color: var(--blurWhite);
+  color: var(--blurDark);
+  border-radius: 5px;
+  border: 6px solid rgb(255, 255, 255);
+}
