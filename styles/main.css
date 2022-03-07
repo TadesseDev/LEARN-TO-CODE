@@ -21,16 +21,16 @@ body {
   padding: 0;
   font-family: "COCOGOOSE", sans-serif;
   color: var(--main);
-  background-color: #f1f1f1;
 }
 main {
   background-image: url("../Images/pictures/mobile-bg.svg");
   background-size: 100%;
   padding-bottom: 8%;
+  background-color: #f1f1f1;
 }
 
 header {
-  margin: 7%;
+  padding: 7%;
 }
 
 #drop-menu {
@@ -147,6 +147,9 @@ hr.short {
 hr.left-tick {
   width: 50px;
   margin-left: 0px;
+}
+hr.full {
+  border-color: var(--blur0)
 }
 #main-tutors .card {
   margin: 1% 2%;
@@ -285,3 +288,21 @@ footer #copy-right .text {
   color: var(--blur2);
   text-decoration: underline;
 }
+
+#more-about{
+  padding: 5%;
+  text-align: center;
+}
+#more-about .logo-card{
+padding: 8% 10%;
+margin: 5%;
+border: 1px solid var(--blur0);
+color: var(--blur1);
+}
+
+#past-graduates{
+  margin: 5%;
+  text-align: center;
+}
+
+
