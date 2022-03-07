@@ -4,8 +4,9 @@
   --main: #272a31;
   --primary: #ee513b;
   --blur: #d3d3d3;
-  --blurWhite: #f0f0f0;
-  --blurDark: #919191;
+  --blur0: #f0f0f0;
+  --blur1: #919191;
+  --blur2: #686868;
 }
 html,
 body {
@@ -18,6 +19,7 @@ body {
 main {
   background-image: url("../Images/pictures/mobile-bg.svg");
   background-size: 100%;
+  padding-bottom: 8%;
 }
 header {
   margin: 7%;
@@ -40,7 +42,7 @@ header nav ul {
   padding: 0px;
 }
 section {
-  margin: 7%;
+  padding: 0% 7%;
 }
 header nav ul li {
   margin: 20px 10px;
@@ -73,12 +75,13 @@ header nav #close-menu img {
 }
 
 /* general selectors*/
-.title-2 {
-  margin-bottom: 5px;
-  color: var(--primary);
-  font-size: 1.3rem;
+.title-3 {
+  margin: 0;
 }
 .title-1 {
+  margin: 0;
+}
+.title-2 {
   margin: 0;
 }
 /* end on general styles*/
@@ -87,11 +90,46 @@ header nav #close-menu img {
 #home {
   margin-top: 10%;
 }
+#home .title-3 {
+  margin-bottom: 5px;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
 #home .card {
   margin: 15px -5%;
   padding: 12px 10px;
-  background-color: var(--blurWhite);
-  color: var(--blurDark);
+  background-color: var(--blur0);
+  color: var(--blur1);
   border-radius: 5px;
   border: 6px solid rgb(255, 255, 255);
+}
+#home .title-1 {
+  margin: 0;
+  color: var(--blur2);
+}
+#home small {
+  color: var(--blur2);
+}
+
+/*main program's*/
+#main-tutors {
+  padding-top: 5%;
+  background-image: url("../Images/pictures/strip-background.svg");
+  background-size: 100%;
+  color: var(--blur0);
+  background-color: var(--main);
+}
+#main-tutors .title-2 {
+  font-weight: 10;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#main-tutors hr {
+  width: 50px;
+  border-color: var(--primary);
+}
+
+#main-tutors .card {
+  display: flex;
 }
