@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;400&display=swap");
 
 :root {
   --main: #272a31;
@@ -77,12 +77,16 @@ header nav #close-menu img {
 /* general selectors*/
 .title-3 {
   margin: 0;
+  font-size: 0.7rem;
 }
 .title-1 {
   margin: 0;
+  font-weight: 500;
 }
 .title-2 {
   margin: 0;
+  font-size: 1.1rem;
+  font-weight: 200;
 }
 /* end on general styles*/
 /* Home */
@@ -113,15 +117,13 @@ header nav #close-menu img {
 
 /*main program's*/
 #main-tutors {
-  padding-top: 5%;
+  padding: 1% 0%;
   background-image: url("../Images/pictures/strip-background.svg");
   background-size: 100%;
   color: var(--blur0);
   background-color: var(--main);
 }
 #main-tutors .title-2 {
-  font-weight: 10;
-  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -131,5 +133,23 @@ header nav #close-menu img {
 }
 
 #main-tutors .card {
+  margin: 5%;
+  padding: 5%;
   display: flex;
+  align-items: center;
+  background-color: #74757954;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#main-tutors .card .icon {
+  width: 10%;
+}
+#main-tutors .card .title-2 {
+  width: 20%;
+  min-width: 50px;
+}
+#main-tutors .card .title-3 {
+  font-weight: 200;
+  width: 65%;
+  min-width: 150px;
 }
