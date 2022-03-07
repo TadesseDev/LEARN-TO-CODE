@@ -26,7 +26,7 @@ header {
 }
 #drop-menu {
   width: 10%;
-  max-width: 40px;
+  max-width: 30px;
 }
 
 header nav {
@@ -131,7 +131,7 @@ header nav #close-menu img {
   text-align: center;
 }
 
-#main-tutors hr {
+hr.short {
   width: 50px;
   border-color: var(--primary);
 }
@@ -167,4 +167,18 @@ header nav #close-menu img {
   font-size: 1.5rem;
   margin-top: 5%;
   padding: 5% 10%;
+}
+
+/*css for customers section*/
+
+#customers {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1;
+}
+#customers .title-2 {
+  text-align: center;
+  color: var(--main);
+  font-weight: 500;
+  font-size: 1.5rem;
 }
