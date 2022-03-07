@@ -261,8 +261,27 @@ footer #copy-right .text {
   width: 60%;
 }
 
+#about-us {
+  text-align: center;
+}
+
 #about-us .title-1 {
   color: var(--primary);
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+#about-us .card {
+  background-color: white;
+  padding: 5%;
+  margin: 5% 0;
+}
+
+#about-us .card p,#about-us small {
+  font-size: small;
+  color: var(--blur1);
+  font-size: 0.8rem;
+}
+#about-us .email{
+  color: var(--blur2);
+  text-decoration: underline;
 }
