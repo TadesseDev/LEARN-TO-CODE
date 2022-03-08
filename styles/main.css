@@ -9,6 +9,7 @@
 :root {
   --main: #272a31;
   --primary: #ee513b;
+  --primaryTransparent: #ee503b9c;
   --blur: #d3d3d3;
   --blur0: #f0f0f0;
   --blur1: #919191;
@@ -305,4 +306,23 @@ color: var(--blur1);
   text-align: center;
 }
 
-
+#past-graduates .container{
+  background-color: silver;
+  max-width: 500px;
+  max-height: 500px;
+  width: 90%;
+  padding-top: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-image: url('../Images/pictures/Graduation1.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#past-graduates .content{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: var(--primaryTransparent);
+}
