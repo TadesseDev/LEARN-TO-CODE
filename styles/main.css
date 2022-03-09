@@ -142,7 +142,20 @@ header nav ul a {
   color: inherit;
 }
 header #logo {
+  animation-name: rotate;
+  animation-duration: 1s;
   display: none;
+  animation-name: rotate;
+  /* transform: rotate(30deg); */
+}
+
+@keyframes rotate {
+  from{
+  transform: rotate(-30deg);
+  }
+  to{
+  transform: rotate(0deg);
+  }
 }
 
 header nav #close-menu {
