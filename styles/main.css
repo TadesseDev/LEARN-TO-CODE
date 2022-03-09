@@ -463,6 +463,10 @@ footer #copy-right {
   justify-content: space-between;
 }
 
+#about #copy-right .logo-2{
+  display: none;
+}
+
 footer #copy-right .logo {
   width: 30%;
 }
@@ -565,6 +569,11 @@ footer #copy-right .text {
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+}
+
+figcaption{
+  font-size: 0.8rem;
+  color: var(--blur3)
 }
 
 @media screen and (min-width: 768px) {
@@ -778,4 +787,25 @@ footer #copy-right .text {
   #past-graduates .container {
     margin-right: 10px;
   }
+  #about #partners{
+    display: none;
+  }
+   #about footer{
+     background-color: var(--main);
+     color: white;
+     margin: 0;
+   }
+
+   #about footer #copy-right{
+     margin: 0;
+     padding: 5%;
+   }
+   
+#about #copy-right .logo-2{
+  display: block;
+}
+
+#about #copy-right .logo-1{
+  display: none;
+}
 }

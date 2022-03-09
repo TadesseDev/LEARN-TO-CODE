@@ -160,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     } else { updateSpeakers(featureSpeakersSection); }
   } catch (exe) {
-    const customException = { code: 403, message: 'Cannot set a feature speaker outside of the home-page' };
-    throw customException;
+
   }
 });
