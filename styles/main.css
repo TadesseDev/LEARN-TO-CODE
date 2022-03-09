@@ -33,6 +33,9 @@ body {
   font-family: lato, sans-serif;
   color: var(--main);
 }
+.hide {
+  display: none;
+}
 main {
   background-image: url("../Images/pictures/mobile-bg.png");
   background-size: 100%;
@@ -59,15 +62,15 @@ header {
 header nav {
   animation-name: mobile-navigation-open;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.35, -0.15, 0.71, 1.37);
+  animation-timing-function: ease-in-out;
   min-height: 100vh;
   min-width: 50%;
+  width: 200px;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   background-color: var(--main);
-  display: none;
 }
 header nav .remaining {
   position: absolute;
@@ -89,7 +92,7 @@ header nav .remaining {
     width: 20%;
     min-width: 20%;
   }
-  80% {
+  60% {
     width: 55%;
   }
   100% {
@@ -104,7 +107,6 @@ section {
   padding: 0% 7%;
 }
 header nav ul li {
-  padding: 15px 5%;
   margin-bottom: 2px;
   color: var(--blur);
   background-color: #3b3b3b;
@@ -115,6 +117,8 @@ header nav ul li:hover {
   padding-bottom: 10px;
 }
 header nav ul a {
+  padding: 3% 5%;
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -167,6 +171,8 @@ header nav #close-menu img {
   font-size: 1.3rem;
 }
 #home .card {
+  animation-name: home-card;
+  animation-duration: 0.5s;
   margin: 15px -5%;
   padding: 12px 10px;
   background-color: var(--blur0);
@@ -174,10 +180,40 @@ header nav #close-menu img {
   border-radius: 5px;
   border: 6px solid rgb(255, 255, 255);
 }
+
+@keyframes home-card {
+  from {
+    margin-left: 10%;
+  }
+  60% {
+    margin-left: 0;
+  }
+  to {
+    margin-left: unset;
+  }
+}
+
 #home .title-1 {
   margin: 0;
   color: var(--blur2);
 }
+
+#home .title-1 img,
+#home .title-3 {
+  animation-name: title-image;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes title-image {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 #home small {
   color: var(--blur2);
 }
@@ -204,6 +240,8 @@ hr.full {
   border-color: rgba(253, 251, 251, 0.342);
 }
 #main-tutors .card {
+  animation-name: rotate-right-left;
+  animation-duration: 1s;
   margin: 1% 2%;
   padding: 5%;
   display: flex;
@@ -211,6 +249,12 @@ hr.full {
   background-color: #74757954;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@keyframes rotate-right-left {
+  from {
+    transform: rotate(20deg);
+  }
 }
 
 #main-tutors .card .icon {
@@ -335,9 +379,16 @@ footer #copy-right .text {
 }
 
 #about-us .title-1 {
+  animation-name: in-out;
+  animation-duration: 1s;
   color: var(--primary);
   font-weight: 500;
   font-size: 1.6rem;
+}
+@keyframes in-out {
+  from {
+    font-size: 1rem;
+  }
 }
 #about-us .card {
   background-color: white;
@@ -434,15 +485,19 @@ footer #copy-right .text {
   }
   header #logo {
     display: block;
-    width: 20%;
+    flex-basis: 20%;
   }
   header nav {
-    display: block;
     position: relative;
     min-height: fit-content;
-    flex-basis: 60%;
+    flex-basis: 70%;
     background-color: unset;
   }
+
+  nav.hide {
+    display: block;
+  }
+
   header nav .remaining {
     display: none;
   }
@@ -468,6 +523,7 @@ footer #copy-right .text {
   header nav ul li a {
     color: inherit;
     font-size: 0.8rem;
+    padding: 0;
   }
   #about-us .title-3 {
     display: none;
@@ -565,7 +621,6 @@ footer #copy-right .text {
   #about-us .title-1 {
     font-size: 2.5rem;
   }
-
   #about-us .card {
     width: 65%;
     margin: auto;

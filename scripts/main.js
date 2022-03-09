@@ -10,7 +10,7 @@ let mobileMenuToggle = null;
 const EventShowMobileMenu = (element, event) => {
   console.log(element);
   element.addEventListener(event, () => {
-    navigation.setAttribute("style", "display: block");
+    navigation.setAttribute("class", "");
   });
   const menuElements = Array.from(navigation.querySelectorAll("li"));
   menuElements.push(...Array.from(navigation.querySelectorAll("#close-menu")));
@@ -23,7 +23,7 @@ const EventShowMobileMenu = (element, event) => {
 
 const EventHideMobileMenu = (element, event) => {
   element.addEventListener(event, () => {
-    navigation.setAttribute("style", "display: none");
+    navigation.setAttribute("class", "hide");
   });
 };
 
