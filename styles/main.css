@@ -301,6 +301,7 @@ hr.full {
 .card .icon img {
   width: 100%;
   min-width: 30px;
+  max-width: 70px;
 }
 
 #main-tutors .card .title-2 {
