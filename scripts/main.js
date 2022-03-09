@@ -110,17 +110,30 @@ const createSpeakerCard = (speaker) => {
   content.classList.add("content");
   content.textContent = speaker.content;
   text.appendChild(content);
-
   reputaion.appendChild(text);
   return reputaion;
 };
 
-const updateSpeakers = (speakerSection) => {
-  for (let speaker of speakers) {
-    speakerSection.appendChild(createSpeakerCard(speaker));
-    // console.log(speaker);
+const updateSpeakers = (speakerSection, start = 0, end = speakers.length) => {
+  for (let i = start; i < end; i++) {
+    speakerSection.appendChild(createSpeakerCard(speakers[i]));
   }
 };
+const removeChildren = (element, start = 0, end = speakers.length) => {
+  let children = Array.from(element.childNodes);
+  for (let i = start; i < end && children[i]; i++) {
+    element.removeChild(children[i]);
+  }
+};
+
+// reload window on screen break point changes to keep the dom clean
+winWidth = window.innerWidth;
+window.addEventListener('resize', () => {
+  if ((winWidth < 768 && window.innerWidth > 768) || (winWidth > 768 && window.innerWidth < 768))
+    location.reload();
+});
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
   main = document.querySelector("main");
   header = main.querySelector("header");
@@ -133,8 +146,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
   EventShowMobileMenu(mobileMenuToggle, "click");
   try {
     featureSpeakersSection = customers.querySelector("#reputation-list");
-    updateSpeakers(featureSpeakersSection);
+    if (window.innerWidth < 768) {
+      updateSpeakers(featureSpeakersSection, 0, 2);
+      const showMore = document.querySelector("#show-more");
+      const showLess = document.querySelector("#show-less");
+      showLess.setAttribute('style', 'display: none');
+      showMore.addEventListener('click', () => {
+        updateSpeakers(featureSpeakersSection, 2);
+        showMore.setAttribute('style', 'display: none');
+        showLess.setAttribute('style', 'display: flex');
+        showLess.addEventListener('click', () => {
+          removeChildren(featureSpeakersSection, 2, speakers.length);
+          showLess.setAttribute('style', 'display: none');
+          showMore.setAttribute('style', 'display: flex');
+        });
+      });
+    }
+    else
+      updateSpeakers(featureSpeakersSection);
   } catch (exe) {
-    console.log("Canno't set a feature speaker outside of the home-page");
+    console.log("Cannot set a feature speaker outside of the home-page");
   }
 });

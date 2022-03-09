@@ -414,7 +414,6 @@ footer #copy-right .logo {
 
 footer #copy-right .text {
   font-size: 0.7rem;
-  width: 60%;
 }
 
 #about-us {
@@ -508,7 +507,32 @@ footer #copy-right .text {
 #past-graduates p {
   font-size: 1rem;
 }
-
+  #show-more,#show-less{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 2% 0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    border: none;   
+    outline: none; 
+    box-shadow: 0 0 10px silver;
+    border-radius: 5px;
+    justify-content:center;
+    align-items: center;
+  }
+  #show-more .icon,#show-less .icon{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url('../Images/Icons/expand_arrow.svg');
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+  }
+  #show-less .icon{
+    background-image: url('../Images/Icons/collapse_arrow.svg');
+  }
 @media screen and (min-width: 768px) {
   main {
     background-image: url("../Images/pictures/main-big.png");
@@ -691,5 +715,8 @@ footer #copy-right .text {
   }
   #graduates .content {
     height: 300px;
+  }
+  #show-more,#show-less{
+    display: none;
   }
 }
