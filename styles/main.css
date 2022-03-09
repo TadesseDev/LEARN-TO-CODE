@@ -463,7 +463,7 @@ footer #copy-right {
   justify-content: space-between;
 }
 
-#about #copy-right .logo-2{
+#about #copy-right .logo-2 {
   display: none;
 }
 
@@ -571,9 +571,9 @@ footer #copy-right .text {
   align-items: center;
 }
 
-figcaption{
+figcaption {
   font-size: 0.8rem;
-  color: var(--blur3)
+  color: var(--blur3);
 }
 
 @media screen and (min-width: 768px) {
@@ -787,25 +787,27 @@ figcaption{
   #past-graduates .container {
     margin-right: 10px;
   }
-  #about #partners{
+
+  #about #partners {
     display: none;
   }
-   #about footer{
-     background-color: var(--main);
-     color: white;
-     margin: 0;
-   }
 
-   #about footer #copy-right{
-     margin: 0;
-     padding: 5%;
-   }
-   
-#about #copy-right .logo-2{
-  display: block;
-}
+  #about footer {
+    background-color: var(--main);
+    color: white;
+    margin: 0;
+  }
 
-#about #copy-right .logo-1{
-  display: none;
-}
+  #about footer #copy-right {
+    margin: 0;
+    padding: 5%;
+  }
+
+  #about #copy-right .logo-2 {
+    display: block;
+  }
+
+  #about #copy-right .logo-1 {
+    display: none;
+  }
 }
