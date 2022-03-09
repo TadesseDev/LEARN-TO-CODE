@@ -320,9 +320,13 @@ hr.full {
   grid-template-columns: 30% 70%;
   color: var(--blur3);
 }
+.reputation:hover {
+  box-shadow: 0 0px 10px 5px #c0c0c05e;
+  border-radius: 5px;
+}
+
 .reputation .text {
   margin-left: 10%;
-  max-height: 120px;
 }
 .reputation img {
   width: 100%;
@@ -643,7 +647,7 @@ footer #copy-right .text {
     display: flex;
     justify-content: center;
   }
-  .content {
+  #graduates .content {
     height: 300px;
   }
 }
