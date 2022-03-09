@@ -48,6 +48,25 @@ main.about {
   background-size: contain;
 }
 
+#top-social-media{
+  background-color: var(--blur3);
+  color: var(--blur0);
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  display: none;
+}
+
+#top-social-media > *{
+  margin: 5px 10px;
+}
+#top-social-media .icon{
+  width: 20px
+}
+#top-social-media .icon img{
+  width: 20px;
+}
+
 header {
   padding: 7%;
   font-family: "COCOGOOSE", sans-serif;
@@ -480,6 +499,10 @@ footer #copy-right .text {
   main {
     background-image: url("../Images/pictures/main-big.png");
     background-position: center;
+  }
+  #top-social-media{
+    display: flex;
+    padding: 0 10%;
   }
   header {
     display: flex;
