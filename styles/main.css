@@ -257,6 +257,11 @@ hr.full {
   }
 }
 
+
+  #main-tutors .card:hover {
+    border: solid white 4px;
+  }
+
 #main-tutors .card .icon {
   width: 13%;
 }
@@ -323,6 +328,7 @@ hr.full {
 .reputation:hover {
   box-shadow: 0 0px 10px 5px #c0c0c05e;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .reputation .text {
@@ -519,6 +525,9 @@ footer #copy-right .text {
     color: var(--blur2);
     background-color: transparent;
   }
+    header nav ul li:first-child{
+      display: none;
+    }
   header nav ul li:last-child {
     border: 4px solid var(--primary);
     color: var(--primary);
@@ -572,10 +581,6 @@ footer #copy-right .text {
     margin: 2px;
     width: 15%;
     min-width: 140px;
-  }
-
-  #main-tutors .card:hover {
-    border: solid white 4px;
   }
 
   #main-tutors .card-list {
