@@ -57,6 +57,9 @@ header {
 }
 
 header nav {
+  animation-name: mobile-navigation-open;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.35, -0.15, 0.71, 1.37);
   min-height: 100vh;
   min-width: 50%;
   position: fixed;
@@ -66,7 +69,33 @@ header nav {
   background-color: var(--main);
   display: none;
 }
+header nav .remaining {
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 100vh;
+  top: 0;
+  left: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 13, 0, 0.46262254901960786) 0%,
+    rgba(200, 139, 0, 0.0984768907563025) 93%,
+    rgba(212, 149, 0, 0) 100%
+  );
+  /* margin-right: 100%; */
+}
 
+@keyframes mobile-navigation-open {
+  0% {
+    width: 20%;
+    min-width: 20%;
+  }
+  80% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
 header nav ul {
   list-style: none;
   padding: 0px;
@@ -97,13 +126,17 @@ header nav #close-menu {
   margin: 10px;
 }
 
+header nav #close-menu img:hover {
+  transform: translate(-100%, 0) rotate(-90deg);
+}
 header nav #close-menu img {
   display: block;
   width: 20%;
   min-width: 20px;
   max-width: 30px;
   margin-left: 100%;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 0) rotate(45deg);
+  transition: transform 0.5s ease;
 }
 
 /* general selectors*/
@@ -245,7 +278,7 @@ hr.full {
 }
 .reputation .text {
   margin-left: 10%;
-  max-height: 100px;
+  max-height: 120px;
 }
 .reputation img {
   width: 100%;
@@ -410,7 +443,9 @@ footer #copy-right .text {
     flex-basis: 60%;
     background-color: unset;
   }
-
+  header nav .remaining {
+    display: none;
+  }
   #close-menu {
     display: none;
   }
