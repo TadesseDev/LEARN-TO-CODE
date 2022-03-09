@@ -40,7 +40,7 @@ main {
   background-position: center;
   background-color: #f1f1f1;
 }
-main.about{
+main.about {
   background-image: url("../Images/pictures/about-bg.png");
   background-size: contain;
 }
@@ -191,12 +191,11 @@ hr.full {
   font-family: "COCOGOOSE", sans-serif;
 }
 
-
-#main-tutors .title-1{
+#main-tutors .title-1 {
   text-align: center;
 }
 
-#main-tutors hr{
+#main-tutors hr {
   margin-bottom: 5%;
 }
 
@@ -212,10 +211,10 @@ hr.full {
   border: none;
   font-size: 1.5rem;
   margin-top: 5%;
-  padding: 5% 12%;   
-   min-width: max-content;
-    margin-left: 50%;
-    transform: translate(-50%, 0);
+  padding: 5% 12%;
+  min-width: max-content;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /*css for customers section*/
@@ -240,6 +239,7 @@ hr.full {
 }
 .reputation .text {
   margin-left: 10%;
+  max-height: 100px;
 }
 .reputation img {
   width: 100%;
@@ -319,7 +319,7 @@ footer #copy-right .text {
   text-align: center;
 }
 
-#more-about .title-2{
+#more-about .title-2 {
   font-weight: bold;
 }
 #more-about .logo-card {
@@ -368,7 +368,7 @@ footer #copy-right .text {
   font-size: 2.5rem;
 }
 
-#past-graduates .title-2{
+#past-graduates .title-2 {
   font-weight: bold;
 }
 
@@ -377,10 +377,8 @@ footer #copy-right .text {
 }
 
 @media screen and (min-width: 768px) {
-  
-
   main {
-    background-image: url('../Images/pictures/main-big.png');
+    background-image: url("../Images/pictures/main-big.png");
     background-position: center;
   }
   header {
@@ -429,125 +427,123 @@ footer #copy-right .text {
     color: inherit;
     font-size: 0.8rem;
   }
-#about-us .title-3{
-  display: none;
-}
-#home{
-  padding: 0 10%;
-  margin-top: 5%;
-}
+  #about-us .title-3 {
+    display: none;
+  }
+  #home {
+    padding: 0 10%;
+    margin-top: 5%;
+  }
   #home .title-3,
-#about-us .title-3 {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-}
-#home .card {
-  max-width: 50%;
-  font-size: 1.4rem;
-  padding: 4%;
-  margin: 4% 0;
-}
+  #about-us .title-3 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  #home .card {
+    max-width: 50%;
+    font-size: 1.4rem;
+    padding: 4%;
+    margin: 4% 0;
+  }
 
+  #home .title-1 {
+    font-size: 2rem;
+  }
 
-#home .title-1 {
-  font-size: 2rem;
-}
+  #home .title-1 img {
+    width: 80%;
+  }
+  #home p {
+    font-size: 1.5rem;
+  }
 
-#home .title-1 img{
-  width: 80%;
-}
-#home p{
-  font-size: 1.5rem;
-}
+  #main-tutors {
+    flex-direction: row;
+    padding: 5% 10%;
+  }
 
-#main-tutors{
-  flex-direction: row;
-  padding: 5% 10%;
-}
+  #main-tutors .card {
+    flex-direction: column;
+    padding: 2%;
+    margin: 2px;
+    width: 15%;
+    min-width: 130px;
+  }
 
-#main-tutors .card{
-  flex-direction: column;
-  padding: 2%;
-  margin: 2px;
-  width: 15%;
-  min-width: 130px;
-}
+  #main-tutors .card:hover {
+    border: solid white 4px;
+  }
 
-#main-tutors .card:hover{
-  border: solid white 4px;
-}
+  #main-tutors .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #main-tutors .card .icon {
+    width: auto;
+    max-width: 110px;
+  }
 
-#main-tutors .card-list{
-  display: flex;
-  flex-wrap: wrap;
-}
-#main-tutors .card .icon{
-  width: auto;
-  max-width: 110px;
-}
+  #main-tutors .card .title-2 {
+    font-size: 1.5rem;
+    width: auto;
+  }
+  #main-tutors .card .title-3 {
+    width: auto;
+    font-size: 1rem;
+    text-align: center;
+  }
 
-#main-tutors .card .title-2{
-  font-size: 1.5rem;
-  width: auto;
-}
-#main-tutors .card .title-3{
-  width: auto;
-  font-size: 1rem;
-  text-align: center;
-}
+  #main-tutors button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin-top: 5%;
+    text-decoration: underline;
+  }
 
-#main-tutors button {
-  background-color: transparent;
-  color: white;
-  padding: 0;
-  margin-top: 5%;
-  text-decoration: underline;
-}
-
-#reputation-list{
-      display: grid;
+  #reputation-list {
+    display: grid;
     grid-template-columns: auto auto;
     gap: 1% 2%;
-}
+  }
 
-#partners .short{
-  margin-bottom: 3%;
-}
-footer #copy-right .text{
-  font-size: 1rem;
-}
+  #partners .short {
+    margin-bottom: 3%;
+  }
+  footer #copy-right .text {
+    font-size: 1rem;
+  }
 
-#about-us{
-padding: 5%;
-}
+  #about-us {
+    padding: 5%;
+  }
 
-#about-us .title-1{
-  font-size: 2.5rem;
-}
+  #about-us .title-1 {
+    font-size: 2.5rem;
+  }
 
-#about-us .card{
-  width: 65%;
-  margin: auto;
-  margin-top: 5%;
-}
+  #about-us .card {
+    width: 65%;
+    margin: auto;
+    margin-top: 5%;
+  }
 
-#more-about .logo-card{
-  padding: 5% 10%;
-  width: 25%;
-  margin: auto;
-  margin-top: 3%;
-}
+  #more-about .logo-card {
+    padding: 5% 10%;
+    width: 25%;
+    margin: auto;
+    margin-top: 3%;
+  }
 
-#past-graduates .title-2{
-  font-size: 1.6rem;
-  letter-spacing: 5;
-}
+  #past-graduates .title-2 {
+    font-size: 1.6rem;
+    letter-spacing: 5;
+  }
 
-#graduates{
-  display: flex;
-}
-.content{
-  height: 300px;
-
-}
+  #graduates {
+    display: flex;
+  }
+  .content {
+    height: 300px;
+  }
 }
