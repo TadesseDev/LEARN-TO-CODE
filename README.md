@@ -1,7 +1,8 @@
 # WM-Website-Development
 
-> This is capston one of module one. 
+> This is capstone one of module one. 
 # Screenshot's 
+![screenshots-capstone-1](https://user-images.githubusercontent.com/69077061/157525702-966cc141-e7a1-4a41-99e1-d31efcfcaf57.png)
 
 ## Built With
 
@@ -11,16 +12,16 @@
 
 ## Live Demo
 
-[Go live]() 🙂
+[Go live](https://tadesse-alemayehu.github.io/LEARN-TO-CODE/) 🙂
 
 
 ## Getting Started
 
 - click on live preview to start learning web development. 👽
-- clone or form this repository to append content. 👏
+- clone or fork this repository to append content. 👏
 
 ### simply clone the main branch.
-** clone the main branch. create a new base branch and work from there**
+** clone the main branch. Create a new base branch and work from there**
 
 ## Authors 👱‍♂️
 
@@ -34,10 +35,10 @@
 
 Give a ⭐️ if you like this project!
 ## Acknowledgments
-
+- [Cindy Shin in Behance](https://www.behance.net/adagio07) for providing an awesome initial design.
 - Microverse for amusing learning resources.
-- Microverse code reviewers.
-- You! 😄 yes you... for visiting.
+- Microverse code reviewers for helpful guidance and support.
+- You! 😄 Yes, you... for visiting.
 
 ## 📝 License
 
