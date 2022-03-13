@@ -58,8 +58,12 @@ main.about {
 
 #top-social-media > * {
   margin: 5px 10px;
+  text-decoration: none;
+  color: var(--blur0);
 }
-
+#top-social-media > *:hover{
+  border-bottom: 3px solid var(--primary);
+}
 .reputation img {
   width: 100%;
 }
@@ -154,7 +158,20 @@ header nav ul li {
 
 header nav ul li:hover {
   border-bottom: 3px var(--primary) solid;
-  padding-bottom: 10px;
+  padding-bottom: 0%;
+  margin-bottom: 2%;
+  margin-bottom: 10px;
+}
+
+header nav ul li:last-child:hover{
+  border-bottom: 4px var(--primary) solid;
+  padding: 2%;
+  margin-bottom: 0;
+  background-color: var(--primary);
+  color: var(--main)
+}
+header nav ul li:last-child:hover a{
+  color: var(--blur0)
 }
 
 header nav ul a {
@@ -594,6 +611,8 @@ figcaption {
     background-color: white;
     align-items: center;
     box-shadow: var(--blur) 0 1px 5px;
+    position: sticky;
+    top: 0;
   }
 
   #drop-menu {

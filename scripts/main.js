@@ -135,7 +135,7 @@ window.addEventListener('resize', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   main = document.querySelector('main');
-  header = main.querySelector('header');
+  header = document.querySelector('header');
   customers = document.querySelector('#customers');
   mobileMenuToggle = header.querySelector('#drop-menu');
   navigation = header.querySelector('nav');
